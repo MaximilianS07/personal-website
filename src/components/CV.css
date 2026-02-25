@@ -41,7 +41,7 @@
     bottom: 0;
     width: 4px;
     border-radius: 4px 0 0 4px;
-    background: linear-gradient(180deg, var(--color-primary), var(--color-accent));
+    background: linear-gradient(180deg, #7c3aed, #ec4899);
     opacity: 0;
     transition: opacity var(--transition-base);
 }
@@ -61,7 +61,7 @@
     font-weight: 600;
     font-family: var(--font-mono);
     color: var(--color-primary);
-    background: rgba(79, 70, 229, 0.08);
+    background: rgba(124, 58, 237, 0.1);
     padding: 0.2rem 0.6rem;
     border-radius: var(--radius-full);
     margin-bottom: 0.6rem;
@@ -120,7 +120,7 @@
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    background: linear-gradient(135deg, #7c3aed, #ec4899);
     color: white;
     font-size: 0.7rem;
     font-weight: 700;

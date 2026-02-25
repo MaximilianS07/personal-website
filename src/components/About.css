@@ -105,7 +105,7 @@
     height: 100%;
     width: 0;
     border-radius: var(--radius-full);
-    background: linear-gradient(90deg, var(--skill-color), var(--color-primary));
+    background: linear-gradient(90deg, var(--skill-color), #a855f7);
     animation: skillFill 1.5s ease forwards;
     animation-play-state: paused;
 }

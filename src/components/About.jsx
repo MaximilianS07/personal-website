@@ -1,19 +1,19 @@
 import './About.css';
 
 const skills = [
-    { name: 'JavaScript', level: 90, color: '#f7df1e' },
-    { name: 'React', level: 85, color: '#61dafb' },
-    { name: 'Python', level: 80, color: '#3776ab' },
-    { name: 'Node.js', level: 78, color: '#339933' },
-    { name: 'TypeScript', level: 75, color: '#3178c6' },
-    { name: 'CSS / Design', level: 88, color: '#e44d26' },
+    { name: 'Futures Trading', level: 92, color: '#eab308' },
+    { name: 'MS Excel & Office Suite', level: 88, color: '#22c55e' },
+    { name: 'SEO & Digital Marketing', level: 85, color: '#f43f5e' },
+    { name: 'Web Development', level: 80, color: '#06b6d4' },
+    { name: 'E-Commerce (Shopify)', level: 82, color: '#a855f7' },
+    { name: 'Financial Analysis', level: 78, color: '#3b82f6' },
 ];
 
 const stats = [
-    { number: '10+', label: 'Projects Built' },
-    { number: '3+', label: 'Years Coding' },
-    { number: '5+', label: 'Technologies' },
-    { number: '∞', label: 'Curiosity' },
+    { number: '$250K+', label: 'Portfolio Managed' },
+    { number: '3.93', label: 'GPA' },
+    { number: '$24K+', label: 'Revenue Generated' },
+    { number: '150+', label: 'Trades / Month' },
 ];
 
 export default function About() {
@@ -23,15 +23,16 @@ export default function About() {
                 <div className="about__text">
                     <h2 className="section-title">About Me</h2>
                     <p className="section-subtitle">
-                        Passionate developer who loves crafting elegant solutions
+                        Finance student, futures trader, and serial entrepreneur
                     </p>
                     <p className="about__bio">
-                        I'm Maximilian Sandhu — a developer, tinkerer, and lifelong learner.
-                        I thrive at the intersection of design and engineering, building
-                        products that are as delightful to use as they are robust under the hood.
-                        Whether it's a full-stack web app, a creative side project, or a deep
-                        dive into a new technology, I'm always chasing that next spark of
-                        inspiration.
+                        I'm Maximilian Sandhu — a Business Honors Finance student at
+                        The University of Texas at Austin, independent futures trader,
+                        and serial entrepreneur. From scaling an e-commerce brand to $15K
+                        in revenue to actively managing a $250K+ futures portfolio, I thrive
+                        at the intersection of markets, technology, and hustle. I'm passionate
+                        about financial markets, digital marketing, and building things that
+                        make an impact.
                     </p>
 
                     <div className="about__stats">

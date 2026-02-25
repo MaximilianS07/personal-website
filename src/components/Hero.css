@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: linear-gradient(160deg, #f8f9fc 0%, #eef0ff 40%, #f0e6ff 70%, #fff5eb 100%);
+    background: linear-gradient(160deg, #faf5ff 0%, #ede0ff 30%, #fce7f3 60%, #fff1e6 100%);
 }
 
 .hero__canvas {
@@ -57,7 +57,7 @@
 }
 
 .hero__name {
-    background: linear-gradient(135deg, var(--color-primary) 0%, #7c3aed 50%, var(--color-accent) 100%);
+    background: linear-gradient(135deg, #7c3aed 0%, #ec4899 40%, #f43f5e 70%, #f97316 100%);
     background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -93,14 +93,14 @@
 }
 
 .hero__btn--primary {
-    background: linear-gradient(135deg, var(--color-primary), #7c3aed);
+    background: linear-gradient(135deg, #7c3aed, #ec4899);
     color: white;
-    box-shadow: 0 4px 20px rgba(79, 70, 229, 0.35);
+    box-shadow: 0 4px 24px rgba(124, 58, 237, 0.4);
 }
 
 .hero__btn--primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(79, 70, 229, 0.45);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 35px rgba(124, 58, 237, 0.5);
 }
 
 .hero__btn--secondary {

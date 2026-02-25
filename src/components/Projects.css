@@ -23,10 +23,10 @@
 }
 
 .projects__filter--active {
-    background: linear-gradient(135deg, var(--color-primary), #7c3aed);
+    background: linear-gradient(135deg, #7c3aed, #ec4899);
     color: white;
     border-color: transparent;
-    box-shadow: 0 2px 12px rgba(79, 70, 229, 0.3);
+    box-shadow: 0 2px 14px rgba(124, 58, 237, 0.35);
 }
 
 .projects__grid {

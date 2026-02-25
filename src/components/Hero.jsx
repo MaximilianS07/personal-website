@@ -37,7 +37,7 @@ export default function Hero() {
             draw() {
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(79, 70, 229, ${this.opacity})`;
+                ctx.fillStyle = `rgba(124, 58, 237, ${this.opacity * 1.5})`;
                 ctx.fill();
             }
         }
@@ -55,7 +55,7 @@ export default function Hero() {
                     const dist = Math.sqrt(dx * dx + dy * dy);
                     if (dist < 140) {
                         ctx.beginPath();
-                        ctx.strokeStyle = `rgba(79, 70, 229, ${0.08 * (1 - dist / 140)})`;
+                        ctx.strokeStyle = `rgba(168, 85, 247, ${0.14 * (1 - dist / 140)})`;
                         ctx.lineWidth = 1;
                         ctx.moveTo(particles[i].x, particles[i].y);
                         ctx.lineTo(particles[j].x, particles[j].y);
@@ -88,7 +88,7 @@ export default function Hero() {
             <div className="hero__content">
                 <div className="hero__badge animate-fade-in-up">
                     <span className="hero__badge-dot" />
-                    Available for opportunities
+                    UT Austin · Business Honors · Finance
                 </div>
 
                 <h1 className="hero__title animate-fade-in-up delay-1">
@@ -96,8 +96,8 @@ export default function Hero() {
                 </h1>
 
                 <p className="hero__subtitle animate-fade-in-up delay-2">
-                    I build thoughtful digital experiences, from full-stack applications
-                    to creative experiments — turning ideas into polished products.
+                    Finance student, independent futures trader, and entrepreneur.
+                    I build businesses, trade markets, and chase big ideas.
                 </p>
 
                 <div className="hero__actions animate-fade-in-up delay-3">
