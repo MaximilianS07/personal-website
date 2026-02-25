@@ -1,0 +1,132 @@
+.about__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.about__bio {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+    margin-bottom: 2rem;
+}
+
+.about__stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.about__stat {
+    text-align: center;
+    padding: 1.2rem 0.5rem;
+    background: var(--color-bg-card);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-base);
+}
+
+.about__stat:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary-light);
+}
+
+.about__stat-number {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about__stat-label {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.about__skills {
+    background: var(--color-bg-card);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-sm);
+}
+
+.about__skills-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+}
+
+.about__skill {
+    margin-bottom: 1.2rem;
+}
+
+.about__skill:last-child {
+    margin-bottom: 0;
+}
+
+.about__skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.4rem;
+}
+
+.about__skill-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.about__skill-pct {
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: var(--font-mono);
+    color: var(--color-text-muted);
+}
+
+.about__skill-bar {
+    height: 8px;
+    background: var(--color-bg);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.about__skill-fill {
+    height: 100%;
+    width: 0;
+    border-radius: var(--radius-full);
+    background: linear-gradient(90deg, var(--skill-color), var(--color-primary));
+    animation: skillFill 1.5s ease forwards;
+    animation-play-state: paused;
+}
+
+.about__skill-fill {
+    animation-play-state: running;
+}
+
+@keyframes skillFill {
+    to {
+        width: var(--skill-level);
+    }
+}
+
+@media (max-width: 768px) {
+    .about__grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about__stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
