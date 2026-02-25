@@ -1,14 +1,5 @@
 import './About.css';
 
-const skills = [
-    { name: 'Futures Trading', level: 92, color: '#eab308' },
-    { name: 'MS Excel & Office Suite', level: 88, color: '#22c55e' },
-    { name: 'SEO & Digital Marketing', level: 85, color: '#f43f5e' },
-    { name: 'Web Development', level: 80, color: '#06b6d4' },
-    { name: 'E-Commerce (Shopify)', level: 82, color: '#a855f7' },
-    { name: 'Financial Analysis', level: 78, color: '#3b82f6' },
-];
-
 const stats = [
     { number: '$250K+', label: 'Portfolio Managed' },
     { number: '3.93', label: 'GPA' },
@@ -43,27 +34,6 @@ export default function About() {
                             </div>
                         ))}
                     </div>
-                </div>
-
-                <div className="about__skills">
-                    <h3 className="about__skills-title">Core Skills</h3>
-                    {skills.map((skill) => (
-                        <div key={skill.name} className="about__skill">
-                            <div className="about__skill-header">
-                                <span className="about__skill-name">{skill.name}</span>
-                                <span className="about__skill-pct">{skill.level}%</span>
-                            </div>
-                            <div className="about__skill-bar">
-                                <div
-                                    className="about__skill-fill"
-                                    style={{
-                                        '--skill-level': `${skill.level}%`,
-                                        '--skill-color': skill.color,
-                                    }}
-                                />
-                            </div>
-                        </div>
-                    ))}
                 </div>
             </div>
         </section>

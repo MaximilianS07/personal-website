@@ -34,13 +34,6 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="contact__info-card">
-                        <div className="contact__info-icon">📞</div>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>(915) 494-9817</p>
-                        </div>
-                    </div>
-                    <div className="contact__info-card">
                         <div className="contact__info-icon">📍</div>
                         <div>
                             <h4>Location</h4>
