@@ -37,7 +37,7 @@ export default function Hero() {
             draw() {
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(124, 58, 237, ${this.opacity * 1.5})`;
+                ctx.fillStyle = `rgba(255, 255, 255, ${this.opacity * 1.2})`;
                 ctx.fill();
             }
         }
@@ -55,7 +55,7 @@ export default function Hero() {
                     const dist = Math.sqrt(dx * dx + dy * dy);
                     if (dist < 140) {
                         ctx.beginPath();
-                        ctx.strokeStyle = `rgba(168, 85, 247, ${0.14 * (1 - dist / 140)})`;
+                        ctx.strokeStyle = `rgba(255, 255, 255, ${0.08 * (1 - dist / 140)})`;
                         ctx.lineWidth = 1;
                         ctx.moveTo(particles[i].x, particles[i].y);
                         ctx.lineTo(particles[j].x, particles[j].y);

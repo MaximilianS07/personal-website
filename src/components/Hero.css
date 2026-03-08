@@ -5,7 +5,18 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: linear-gradient(160deg, #faf5ff 0%, #ede0ff 30%, #fce7f3 60%, #fff1e6 100%);
+    background: url('/ut-austin-campus.png') center center / cover no-repeat;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg,
+            rgba(15, 5, 30, 0.72) 0%,
+            rgba(30, 10, 50, 0.65) 40%,
+            rgba(20, 5, 40, 0.70) 100%);
+    z-index: 0;
 }
 
 .hero__canvas {
@@ -18,7 +29,7 @@
 
 .hero__content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     text-align: center;
     padding: 2rem;
     max-width: 760px;
@@ -30,11 +41,11 @@
     gap: 0.5rem;
     padding: 0.45rem 1.2rem;
     border-radius: var(--radius-full);
-    background: var(--color-bg-glass);
-    border: 1px solid var(--color-border);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     font-size: 0.85rem;
     font-weight: 500;
-    color: var(--color-text-secondary);
+    color: rgba(255, 255, 255, 0.85);
     margin-bottom: 1.5rem;
     backdrop-filter: blur(10px);
 }
@@ -53,7 +64,7 @@
     line-height: 1.1;
     letter-spacing: -0.03em;
     margin-bottom: 1.25rem;
-    color: var(--color-text);
+    color: #ffffff;
 }
 
 .hero__name {
@@ -68,7 +79,7 @@
 .hero__subtitle {
     font-size: 1.2rem;
     line-height: 1.7;
-    color: var(--color-text-secondary);
+    color: rgba(255, 255, 255, 0.8);
     max-width: 560px;
     margin: 0 auto 2.5rem;
 }
@@ -104,17 +115,19 @@
 }
 
 .hero__btn--secondary {
-    background: var(--color-bg-alt);
-    color: var(--color-text);
-    border: 1px solid var(--color-border);
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.25);
     box-shadow: var(--shadow-sm);
+    backdrop-filter: blur(8px);
 }
 
 .hero__btn--secondary:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
-    border-color: var(--color-primary-light);
-    color: var(--color-primary);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.18);
 }
 
 /* Scroll indicator */
@@ -123,7 +136,7 @@
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    color: var(--color-text-muted);
+    color: rgba(255, 255, 255, 0.5);
     font-size: 0.8rem;
     animation: float 3s ease-in-out infinite;
 }
@@ -131,7 +144,7 @@
 .hero__scroll-mouse {
     width: 24px;
     height: 38px;
-    border: 2px solid var(--color-text-muted);
+    border: 2px solid rgba(255, 255, 255, 0.4);
     border-radius: 12px;
     position: relative;
 }
@@ -139,7 +152,7 @@
 .hero__scroll-wheel {
     width: 3px;
     height: 8px;
-    background: var(--color-text-muted);
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 2px;
     position: absolute;
     top: 6px;
