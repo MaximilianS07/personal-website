@@ -25,19 +25,21 @@
     border-radius: var(--radius-md);
     border: 1px solid var(--color-border);
     transition: all var(--transition-base);
+    border-top: 3px solid transparent;
 }
 
 .about__stat:hover {
     transform: translateY(-4px);
-    box-shadow: var(--shadow-md);
-    border-color: var(--color-primary-light);
+    box-shadow: 0 4px 20px rgba(5, 150, 105, 0.15);
+    border-color: #34d399;
+    border-top-color: #059669;
 }
 
 .about__stat-number {
     display: block;
     font-size: 1.6rem;
     font-weight: 800;
-    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    background: linear-gradient(135deg, #059669, #34d399);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -56,6 +58,7 @@
     padding: 2rem;
     border-radius: var(--radius-lg);
     border: 1px solid var(--color-border);
+    border-left: 4px solid #059669;
     box-shadow: var(--shadow-sm);
 }
 

@@ -36,7 +36,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(124, 58, 237, 0.1);
+    background: rgba(225, 29, 72, 0.1);
     border-radius: var(--radius-sm);
     flex-shrink: 0;
 }
@@ -62,15 +62,15 @@
 .contact__social {
     font-size: 0.8rem;
     font-weight: 600;
-    color: var(--color-primary);
+    color: #e11d48;
     padding: 0.2rem 0.6rem;
     border-radius: var(--radius-full);
-    background: rgba(124, 58, 237, 0.1);
+    background: rgba(225, 29, 72, 0.1);
     transition: all var(--transition-fast);
 }
 
 .contact__social:hover {
-    background: var(--color-primary);
+    background: #e11d48;
     color: white;
 }
 
@@ -114,8 +114,8 @@
 
 .contact__field input:focus,
 .contact__field textarea:focus {
-    border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+    border-color: #e11d48;
+    box-shadow: 0 0 0 3px rgba(225, 29, 72, 0.15);
 }
 
 .contact__submit {
@@ -125,16 +125,16 @@
     font-size: 0.95rem;
     font-weight: 600;
     font-family: var(--font-sans);
-    background: linear-gradient(135deg, #7c3aed, #ec4899);
+    background: linear-gradient(135deg, #e11d48, #f472b6);
     color: white;
     cursor: pointer;
     transition: all var(--transition-base);
-    box-shadow: 0 4px 24px rgba(124, 58, 237, 0.35);
+    box-shadow: 0 4px 24px rgba(225, 29, 72, 0.35);
 }
 
 .contact__submit:hover:not(:disabled) {
     transform: translateY(-3px);
-    box-shadow: 0 8px 35px rgba(124, 58, 237, 0.5);
+    box-shadow: 0 8px 35px rgba(225, 29, 72, 0.5);
 }
 
 .contact__submit:disabled {
@@ -147,4 +147,66 @@
     .contact__grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* =============================
+   Dark-background overrides
+   ============================= */
+.section-bg--deep .contact__info-card {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.section-bg--deep .contact__info-card:hover {
+    border-color: rgba(244, 114, 182, 0.4);
+    box-shadow: 0 4px 20px rgba(225, 29, 72, 0.25);
+}
+
+.section-bg--deep .contact__info-card h4 {
+    color: #ffffff;
+}
+
+.section-bg--deep .contact__info-card p {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.section-bg--deep .contact__info-icon {
+    background: rgba(225, 29, 72, 0.25);
+}
+
+.section-bg--deep .contact__social {
+    color: #f472b6;
+    background: rgba(225, 29, 72, 0.2);
+}
+
+.section-bg--deep .contact__social:hover {
+    background: #e11d48;
+    color: #ffffff;
+}
+
+.section-bg--deep .contact__form {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.section-bg--deep .contact__field label {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.section-bg--deep .contact__field input,
+.section-bg--deep .contact__field textarea {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+
+.section-bg--deep .contact__field input::placeholder,
+.section-bg--deep .contact__field textarea::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.section-bg--deep .contact__field input:focus,
+.section-bg--deep .contact__field textarea:focus {
+    border-color: #e11d48;
+    box-shadow: 0 0 0 3px rgba(225, 29, 72, 0.25);
 }

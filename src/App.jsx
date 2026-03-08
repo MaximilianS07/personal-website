@@ -14,10 +14,18 @@ export default function App() {
     <>
       <Navbar />
       <Hero />
-      <div className="reveal"><About /></div>
-      <div className="reveal"><Projects /></div>
-      <div className="reveal"><CV /></div>
-      <div className="reveal"><Contact /></div>
+      <div className="section-bg section-bg--white">
+        <div className="reveal"><About /></div>
+      </div>
+      <div className="section-bg section-bg--lavender">
+        <div className="reveal"><Projects /></div>
+      </div>
+      <div className="section-bg section-bg--slate">
+        <div className="reveal"><CV /></div>
+      </div>
+      <div className="section-bg section-bg--deep">
+        <div className="reveal"><Contact /></div>
+      </div>
       <Footer />
     </>
   );

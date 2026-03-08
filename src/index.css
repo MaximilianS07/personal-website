@@ -262,7 +262,7 @@ img {
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 0.5rem;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  background: var(--title-gradient, linear-gradient(135deg, var(--color-primary), var(--color-accent)));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -275,14 +275,68 @@ img {
   max-width: 600px;
 }
 
-/* Scroll-reveal base */
+/* ============================
+   Per-Section Header Colors
+   ============================ */
+.about {
+  --title-gradient: linear-gradient(135deg, #059669, #34d399);
+}
+
+.projects {
+  --title-gradient: linear-gradient(135deg, #d97706, #f59e0b, #fbbf24);
+}
+
+.cv {
+  --title-gradient: linear-gradient(135deg, #2563eb, #06b6d4);
+}
+
+.contact {
+  --title-gradient: linear-gradient(135deg, #e11d48, #f472b6);
+}
+
+/* ============================
+   Section Backgrounds
+   ============================ */
+.section-bg {
+  position: relative;
+}
+
+.section-bg--white {
+  background: #ffffff;
+}
+
+.section-bg--lavender {
+  background: linear-gradient(180deg, #f3ecff 0%, #ece4fb 100%);
+}
+
+.section-bg--slate {
+  background: linear-gradient(180deg, #f8f9fc 0%, #eef0f5 100%);
+}
+
+.section-bg--deep {
+  background: linear-gradient(160deg, #1a0a2e 0%, #2d1552 40%, #1e0f3a 100%);
+}
+
+/* Deep section light text overrides */
+.section-bg--deep .section-subtitle {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* ============================
+   Scroll-reveal with focus effect
+   ============================ */
 .reveal {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translateY(40px) scale(0.97);
+  filter: blur(4px);
+  transition:
+    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .reveal.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0) scale(1);
+  filter: blur(0);
 }
